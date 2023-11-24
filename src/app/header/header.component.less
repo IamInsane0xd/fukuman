@@ -1,16 +1,20 @@
-@import url(../../styles.less);
-
-@header-background: darken(@background, 5%);
+@import url(../../styles);
 
 header {
   display: flex;
   justify-content: space-between;
   height: 70px;
-  background-color: @header-background;
+  background-color: @header-background-color;
   padding: 0 10px;
   align-items: center;
+  cursor: default;
 
   img {
     height: 60px;
   }
+}
+
+app-header-menu {
+  width: 50%;
+  height: 100%;
 }

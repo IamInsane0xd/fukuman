@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(fonts.css);
 
-@background: #eaeaea;
+@background-color: #eaeaea;
+@header-background-color: darken(@background-color, 5%);
+@nav-button-bg-color: @header-background-color;
+@nav-button-hover-bg-color: darken(@nav-button-bg-color, 10%);
+@nav-button-active-bg-color: darken(@nav-button-hover-bg-color, 3%);
+@font-color: #232323;
+@link-color: #3270c4;
+@link-hover-color: darken(@link-color, 10%);
 
 * {
   margin: 0;
@@ -9,5 +17,16 @@
 }
 
 body {
-  background-color: @background;
+  background-color: @background-color;
+  color: @font-color;
+  font-family: 'Nunito', sans-serif;
+
+  a {
+    color: @link-color;
+    text-decoration: none;
+
+    &:hover {
+      color: @link-hover-color;
+    }
+  }
 }

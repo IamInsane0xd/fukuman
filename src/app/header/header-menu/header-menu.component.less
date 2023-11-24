@@ -1,0 +1,30 @@
+@import url(../../../styles);
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  margin: 0 10px;
+  height: 100%;
+
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    background-color: @nav-button-bg-color;
+    vertical-align: middle;
+    color: @font-color;
+    user-select: none;
+
+    &:hover {
+      background-color: @nav-button-hover-bg-color;
+    }
+
+    &:active {
+      background-color: @nav-button-active-bg-color;
+    }
+  }
+}
