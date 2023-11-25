@@ -1,7 +1,8 @@
 import {Component, OnInit} from "@angular/core";
 import { CommonModule } from '@angular/common';
 
-declare var asd: any;
+declare var homePage: any;
+declare var aboutPage: any;
 
 @Component({
   selector: 'app-header-menu',
@@ -12,6 +13,9 @@ declare var asd: any;
 })
 export class HeaderMenuComponent implements OnInit {
   ngOnInit() {
-    new asd();
+    new homePage();
+    new aboutPage();
+
+    homePage();
   }
 }

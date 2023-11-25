@@ -1,8 +1,7 @@
-@import url(../../../styles);
+@import "../../../assets/css/vars";
 
 nav {
   display: flex;
-  flex-direction: row;
   justify-content: right;
   align-items: center;
   margin: 0 10px;
@@ -20,6 +19,7 @@ nav {
     user-select: none;
     cursor: pointer;
     margin-right: @nav-item-spacing;
+    transition: background-color .2s;
 
     &:nth-last-child(1) {
       margin-right: 0;
@@ -30,6 +30,10 @@ nav {
     }
 
     &:active {
+      background-color: @nav-button-active-bg-color;
+    }
+
+    &.current-page {
       background-color: @nav-button-active-bg-color;
     }
   }

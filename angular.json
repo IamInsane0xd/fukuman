@@ -34,7 +34,7 @@
               "src/styles.less"
             ],
             "scripts": [
-              "src/assets/js/pageSwitching.ts"
+              "src/assets/js/pageSwitching.js"
             ]
           },
           "configurations": {
