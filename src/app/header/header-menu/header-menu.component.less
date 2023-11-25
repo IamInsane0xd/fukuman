@@ -12,12 +12,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35px;
-    width: 100px;
+    height: @nav-item-height;
+    width: @nav-item-width;
     background-color: @nav-button-bg-color;
     vertical-align: middle;
     color: @font-color;
     user-select: none;
+    cursor: pointer;
+    margin-right: @nav-item-spacing;
+
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
 
     &:hover {
       background-color: @nav-button-hover-bg-color;

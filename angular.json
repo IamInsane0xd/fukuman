@@ -30,9 +30,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/fonts.css",
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/pageSwitching.ts"
+            ]
           },
           "configurations": {
             "production": {

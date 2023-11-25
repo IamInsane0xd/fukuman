@@ -3,18 +3,17 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: @header-height;
   background-color: @header-background-color;
   padding: 0 10px;
   align-items: center;
   cursor: default;
 
   img {
-    height: 60px;
+    height: calc(@header-height - 10px);
   }
 }
 
 app-header-menu {
-  width: 50%;
   height: 100%;
 }
