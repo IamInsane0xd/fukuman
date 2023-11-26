@@ -1,8 +1,8 @@
 function switchPage(index, pageName) {
   let buttons = document.querySelectorAll(".nav-item");
   let button = document.querySelector(`#${pageName}-button`);
-  let pages = document.querySelectorAll(".content");
-  let page = document.querySelector(`#${pageName}-content`);
+  let pages = document.querySelectorAll(".page");
+  let page = document.querySelector(`#${pageName}-page`);
 
   buttons.forEach(item => item.classList.remove("current-page"));
   button.classList.add("current-page");
